@@ -1,0 +1,16 @@
+.discreption-container{
+    padding: 30px;
+}
+.titles{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.review-heading{
+    padding: 10px 20px;
+    border: 1px solid #bfbfbf;
+}
+.review-container{
+    border: 1px solid #bfbfbf;
+    padding: 30px;
+}

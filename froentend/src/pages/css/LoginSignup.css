@@ -1,0 +1,40 @@
+.logsign-container{
+    background-color: rgb(210, 186, 214);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5c5b5b;
+}
+.logsign-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 50px 30px;
+    height: 80vh;
+    gap: 15px;
+    border-radius: 10px;
+}
+.login-input{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+.login-title{
+    color: black;
+}
+.login-btn{
+    background-color: rgb(215, 36, 36);
+    padding: 15px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.create{
+    color: red;
+}
+.input-check{
+    display: flex;
+    gap: 15px;
+}

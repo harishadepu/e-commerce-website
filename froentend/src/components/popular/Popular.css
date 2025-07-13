@@ -1,0 +1,17 @@
+.popular-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 30px;
+
+}
+.line{
+    width: 10px;
+}
+.popular-images{
+    display: flex;
+    margin: 30px 10px;
+    gap: 10px;
+}

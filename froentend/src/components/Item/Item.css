@@ -1,0 +1,23 @@
+.popular-card{
+    width: 300px;
+}
+.popular-name{
+    font-size: 18px;
+}
+.new{
+    font-weight: bold;
+}
+.old{
+    text-decoration: line-through;
+    color: rgb(158, 158, 149);
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+.lady{
+    width: 300px;
+}

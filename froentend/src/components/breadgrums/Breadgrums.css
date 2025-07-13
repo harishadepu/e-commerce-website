@@ -1,0 +1,6 @@
+.url{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+}

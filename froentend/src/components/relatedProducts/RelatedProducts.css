@@ -1,0 +1,11 @@
+.related-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.related-product-container{
+    display: flex;
+    gap: 10px;
+}
