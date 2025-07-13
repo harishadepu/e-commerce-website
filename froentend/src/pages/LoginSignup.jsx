@@ -12,7 +12,7 @@ const LoginSignup = () => {
     setFormData({...formData,[e.target.name]:e.target.value})
   }
   const url = "https://e-commerce-website-ga80.onrender.com"
- 
+
   const SignUp = async ()=>{
     let responseData;
     await fetch( url + '/signup',{
