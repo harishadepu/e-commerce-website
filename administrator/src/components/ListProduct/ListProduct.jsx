@@ -3,8 +3,9 @@ import crossIcon from '../../assets/cross_icon.png'
 import './ListProduct.css'
 const ListProduct = () => {
   const [allproducts, setAllProducts] = useState([])
+  const url = "https://e-commerce-website-ga80.onrender.com"
   const fetchproduct = async()=>{
-    await fetch('http://localhost:3000/allproducts')
+    await fetch(url + '/allproducts')
     .then((res)=>res.json())
     .then((data)=>{
       setAllProducts(data)
@@ -14,7 +15,7 @@ const ListProduct = () => {
     fetchproduct();
   })
   const removeProduct = async(id)=>{
-    await fetch('http://localhost:3000/removeproduct',{
+    await fetch(url + '/removeproduct',{
       method:'POST',
       headers:{
         "Acceput":"application/json",

@@ -25,7 +25,7 @@ const AddProducts = () => {
     let product = productName;
     let formData = new FormData();
     formData.append('image',image);
-    const url ="https://e-commerce-website-njek.onrender.com"
+    const url ="https://e-commerce-website-ga80.onrender.com"
     await fetch(url + '/upload',{
       method:"POST",
       headers:{

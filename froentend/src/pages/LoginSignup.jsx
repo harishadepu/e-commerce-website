@@ -11,10 +11,11 @@ const LoginSignup = () => {
   const changeHandler =(e)=>{
     setFormData({...formData,[e.target.name]:e.target.value})
   }
+  const url = "https://e-commerce-website-ga80.onrender.com"
  
   const SignUp = async ()=>{
     let responseData;
-    await fetch( 'http://localhost:3000/signup',{
+    await fetch( url + '/signup',{
       method:"POST",
       headers:{
         "Accept":"application/json",
@@ -38,7 +39,7 @@ const LoginSignup = () => {
   const Login =async ()=>{  
     let responseData;
     
-    await fetch('http://localhost:3000/login',{
+    await fetch(url + '/login',{
       method:"POST",
       headers:{
         "Accept":"application/json",
