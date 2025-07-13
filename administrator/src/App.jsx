@@ -1,6 +1,6 @@
 import React from 'react'
 import Admin from './pages/Admin'
-import Navbar from './components/navbar/Navbar'
+import Navbar from './components/Navbar/Navbar'
 const App = () => {
   return (
     <div className='app-container'><Navbar/><Admin/></div>
