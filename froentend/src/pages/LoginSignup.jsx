@@ -7,7 +7,6 @@ const LoginSignup = () => {
     email:"",
     password:""
   })
-  const url = "https://e-commerce-website-njek.onrender.com"
 
   const changeHandler =(e)=>{
     setFormData({...formData,[e.target.name]:e.target.value})
@@ -15,7 +14,7 @@ const LoginSignup = () => {
  
   const SignUp = async ()=>{
     let responseData;
-    await fetch(url + '/signup',{
+    await fetch( 'http://localhost:3000/signup',{
       method:"POST",
       headers:{
         "Accept":"application/json",
@@ -39,7 +38,7 @@ const LoginSignup = () => {
   const Login =async ()=>{  
     let responseData;
     
-    await fetch(url + '/login',{
+    await fetch('http://localhost:3000/login',{
       method:"POST",
       headers:{
         "Accept":"application/json",

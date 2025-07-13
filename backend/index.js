@@ -8,7 +8,7 @@ const path = require('path');
 app.use(express.json());
 const cors = require('cors');
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:3001","https://harishadepu.github.io"
+const allowedOrigins = ["http://localhost:5173", "http://localhost:3001"
 ];
 
 app.use(cors({
@@ -46,7 +46,7 @@ app.use('/images', express.static('upload/images'))
 
 app.post('/upload', upload.single('image'), (req, res) => {
     console.log(req.file)
-    res.json({success:1, image_url: `https://e-commerce-website-njek.onrender.com/images/${req.file.filename}`})
+    res.json({success:1, image_url: `https://localhost:3000/images/${req.file.filename}`})
 })
 
 const Product = mongoose.model('product',{
