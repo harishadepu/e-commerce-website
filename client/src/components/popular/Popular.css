@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     padding: 30px;
 
 }
@@ -12,6 +11,7 @@
 }
 .popular-images{
     display: flex;
+    flex-wrap: wrap;
     margin: 30px 10px;
     gap: 10px;
 }

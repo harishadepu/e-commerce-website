@@ -7,6 +7,7 @@ const multer = require('multer');
 const path = require('path');
 app.use(express.json());
 const cors = require('cors');
+require('dotenv').config();
 
 const allowedOrigins = ["http://localhost:5173", "http://localhost:3001"
 ];
@@ -24,7 +25,7 @@ app.use(cors({
   credentials: true
 }));
 
-require('dotenv').config();
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(error => console.error("MongoDB connection error:", error));

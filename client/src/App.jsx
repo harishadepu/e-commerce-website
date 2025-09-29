@@ -1,8 +1,7 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import './App.css';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ShopCategory from './pages/ShopCategory';
-
 import Shop from './pages/Shop';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
@@ -12,11 +11,10 @@ import menBanner from './Assets/banner_mens.png'
 import kidsBanner from './Assets/banner_kids.png'
 import womenBanner from './Assets/banner_women.png'
 
-function App() {
+const App = () => {
   const token = localStorage.getItem('auth-token');
-
   return (
-    <BrowserRouter>
+    <>
     <Navbar />
     <Routes>
       <Route path="/" element={ token ?  <Shop/> : <LoginSignup/>}/>
@@ -29,9 +27,11 @@ function App() {
       <Route path="/login" element={<LoginSignup/>}/>
     </Routes>
     <Footer />
-    </BrowserRouter>
-
-    
+    </>
   )
 }
-export default App;
+
+export default App
+
+
+

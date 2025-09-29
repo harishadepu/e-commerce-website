@@ -78,7 +78,7 @@ const LoginSignup = () => {
         
         <div className='input-check'>
           <input type="checkbox" id='checkbox' required/>
-        <label for="checkbox">By condtinuing. i agree to the terms of use & privacy policy</label></div>
+        <label htmlFor="checkbox">By condtinuing. i agree to the terms of use & privacy policy</label></div>
         
       </div>
       
