@@ -30,3 +30,27 @@
     background-color: black;
     color: #fff;
 }
+
+@media (max-width:600px){
+    .input-text{
+        width: 300px;
+    }
+    .offer-name{
+        font-size: 30px;
+    }
+}
+@media (max-width:380px){
+    .input-text{
+        width: 260px;
+    }
+    .input{
+        width: 200px;
+    }
+    .subscribe{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .offer-name{
+        font-size: 25px;
+    }
+}

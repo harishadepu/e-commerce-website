@@ -134,5 +134,13 @@ a{
     .login{
         transform: scale(0.8);
         margin-right: -30px;
+        width: 100px;
+    }
+    .cart{
+        width: 25px;
+        height: auto;
+    }
+    .logo-text{
+        font-size: 24px;
     }
 }

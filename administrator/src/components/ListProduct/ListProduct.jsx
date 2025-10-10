@@ -3,7 +3,7 @@ import crossIcon from '../../assets/cross_icon.png'
 import './ListProduct.css'
 const ListProduct = () => {
   const [allproducts, setAllProducts] = useState([])
-  const url = "https://e-commerce-website-ga80.onrender.com"
+  const url = "http://localhost:3000"
   const fetchproduct = async()=>{
     await fetch(url + '/allproducts')
     .then((res)=>res.json())

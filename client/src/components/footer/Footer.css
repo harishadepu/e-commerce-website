@@ -32,3 +32,10 @@
 .copyright{
     margin: 20px;
 }
+
+@media (max-width:500px) {
+    .names{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
