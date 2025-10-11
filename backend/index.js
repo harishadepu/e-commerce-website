@@ -9,11 +9,9 @@ app.use(express.json());
 const cors = require('cors');
 require('dotenv').config();
 
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"
-];
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: "*",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
