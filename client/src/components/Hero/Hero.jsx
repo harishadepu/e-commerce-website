@@ -9,7 +9,8 @@ const Hero = () => {
     <div className='hero-container'>
         <div className="content">
             <p className='arri'>NEW ARRIVALS ONLY</p>
-            <h1 className='title'>new <img src={hand} className='hand-icon'/><br/> collections for everyone</h1>
+            <h1 className='title'>new <img src={hand} className='hand-icon'/><br/>
+             collections <br/> for everyone</h1>
             <button className='latest'>Latest Collection <img src={arrow} className="arrow"/></button>
         </div>
         <div className='model-img'>

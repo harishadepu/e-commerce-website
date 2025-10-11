@@ -2,7 +2,7 @@
 .hero-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-image: linear-gradient(to top, #fff, rgb(177, 125, 172));
   background-size: cover;
   padding: 30px;
@@ -22,7 +22,7 @@
 .title {
   font-size: 70px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
 }
 
 .content {
@@ -41,7 +41,7 @@
   align-items: center;
   padding: 15px 20px;
   border: none;
-  width: 100%;
+  width: 50%;
   max-width: 500px;
 }
 
@@ -83,6 +83,9 @@
     flex-direction: column;
     padding: 20px;
   }
+  .arri{
+    font-size: 12px;
+  }
 
   .title {
     font-size: 32px;
@@ -106,13 +109,15 @@
   }
 
   .latest {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 10px 15px;
+    padding: auto;
+    font-size: 10px;
   }
 
   .arrow {
     margin-left: 0;
     margin-top: 10px;
   }
+  
 }
