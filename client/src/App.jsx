@@ -7,9 +7,9 @@ import Product from './pages/Product';
 import Cart from './pages/Cart';
 import LoginSignup from './pages/LoginSignup';
 import Footer from './components/footer/Footer';
-import menBanner from './Assets/banner_mens.png'
-import kidsBanner from './Assets/banner_kids.png'
-import womenBanner from './Assets/banner_women.png'
+import menBanner from './assets/banner_mens.png'
+import kidsBanner from './assets/banner_kids.png'
+import womenBanner from './assets/banner_women.png'
 
 const App = () => {
   const token = localStorage.getItem('auth-token');
