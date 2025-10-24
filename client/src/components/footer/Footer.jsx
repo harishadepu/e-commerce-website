@@ -1,9 +1,9 @@
 import React from 'react'
 import './Footer.css'
-import insta from '../../Assets/instagram_icon.png'
-import whats from '../../Assets/whatsapp_icon.png'
-import pint from '../../Assets/pintester_icon.png'
-import logo from '../../Assets/logo_big.png'
+import insta from '../../assets/instagram_icon.png'
+import whats from '../../assets/whatsapp_icon.png'
+import pint from '../../assets/pintester_icon.png'
+import logo from '../../assets/logo_big.png'
 const Footer = () => {
   return (
     <div className='footer'>

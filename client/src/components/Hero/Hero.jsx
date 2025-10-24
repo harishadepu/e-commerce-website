@@ -1,7 +1,7 @@
 import React from 'react'
-import hand from '../../Assets/hand_icon.png';
-import model from '../../Assets/hero_image.png'
-import arrow from '../../Assets/arrow.png'
+import hand from '../../assets/hand_icon.png';
+import model from '../../assets/hero_image.png'
+import arrow from '../../assets/arrow.png'
 import './Hero.css'
 const Hero = () => {
   return (

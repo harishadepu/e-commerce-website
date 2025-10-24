@@ -1,5 +1,5 @@
 import React from 'react'
-import new_collections from '../../Assets/new_collections.js'
+import new_collections from '../../assets/new_collections.js'
 import Item from '../Item/Item'
 import './NewCollection.css'
 const NewCollection = () => {
