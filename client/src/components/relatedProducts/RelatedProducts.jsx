@@ -1,15 +1,21 @@
-import React from 'react'
-import data_product from '../../assets/data'
+import React, { useEffect, useState } from 'react'
+
 import Item from '../Item/Item'
 import './RelatedProducts.css'
 const RelatedProducts = () => {
+  const [popular, setPopular] = useState([])
+    useEffect(()=>{
+      fetch('http://localhost:3000/popular')
+      .then(res=>res.json())
+      .then(data=>setPopular(data))
+    },[])
   return (
     <div className='related-container'>
         <h1 className='related-title'>Related Products</h1>
         <div className='related-product-container'>
             {
-                data_product.map((each,i)=>{
-                    return <Item key={each.id} id={each.id} name={each.name} image={each.image} new_price={each.new_price} old_price={each.old_price} /> 
+                popular.map((each,i)=>{
+                    return <Item key={each._id} id={each._id} name={each.name} image={each.image} new_price={each.new_price} old_price={each.old_price} /> 
                 })
 
             }

@@ -11,12 +11,13 @@ const getDefaultCart = ()=>{
   return cart;
 }
 
+
 const ShopContextProvider = (props) => {
   const [all_product, setAll_product] = useState([])
   const [cartItems,setCartItems] = useState(getDefaultCart())
 
   useEffect(()=>{
-    fetch('https://e-commerce-back-ko22.onrender.com/allproducts')
+    fetch('http://localhost:3000/allproducts')
     .then(res=>res.json())
     .then(data=>setAll_product(data))
   },[])

@@ -19,7 +19,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={ token ?  <Shop/> : <LoginSignup/>}/>
       <Route path="/men" element={ token ? <ShopCategory banner={menBanner} category="men" /> : <LoginSignup/>}/>
-      <Route path="/kids" element={token ?<ShopCategory banner={kidsBanner} category="kid"/> : <LoginSignup/>}/>
+      <Route path="/kids" element={token ?<ShopCategory banner={kidsBanner} category="kids"/> : <LoginSignup/>}/>
       <Route path="/women" element={token ? <ShopCategory banner={womenBanner} category="women"/> : <LoginSignup/>}/>
       <Route path="/product/:productId" element={<Product />}/>
           
