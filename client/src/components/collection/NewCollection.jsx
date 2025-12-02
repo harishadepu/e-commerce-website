@@ -4,7 +4,7 @@ import './NewCollection.css'
 const NewCollection = () => {
   const [newCollection, setNewCollection] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:3000/newcollection')
+    fetch('https://e-commerce-back-ko22.onrender.com/newcollection')
     .then(res=>res.json())
     .then(data=>setNewCollection(data))
 

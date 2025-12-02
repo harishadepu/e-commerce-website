@@ -25,7 +25,7 @@ const AddProducts = () => {
     let product = productName;
     let formData = new FormData();
     formData.append('image',image);
-    const url ="http://localhost:3000"
+    const url ="https://e-commerce-back-ko22.onrender.com"
     await fetch(url + '/upload',{
       method:"POST",
       headers:{

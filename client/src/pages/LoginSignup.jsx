@@ -11,7 +11,7 @@ const LoginSignup = () => {
   const changeHandler =(e)=>{
     setFormData({...formData,[e.target.name]:e.target.value})
   }
-  const url = "https://e-commerce-back-ko22.onrender.com/"
+  const url = "https://e-commerce-back-ko22.onrender.com"
 
   const SignUp = async ()=>{
     let responseData;
